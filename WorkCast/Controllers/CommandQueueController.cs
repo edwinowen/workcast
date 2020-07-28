@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using WorkCast.Models;
@@ -66,8 +67,8 @@ namespace WorkCast.Controllers
             db.SaveChanges();
         }
 
-        [HttpPost]
-        public void Seed()
+        [HttpGet]
+        public ActionResult<string> Seed()
         {
             string[] SeedData = {
                 "X001ID=1234",
@@ -97,6 +98,8 @@ namespace WorkCast.Controllers
             }
 
             db.SaveChanges();
+
+            return "Database seeded! Use '/api/commandqueue/dequeue' to go through the commands";
         }
     }
 }
