@@ -9,6 +9,9 @@ namespace WorkCast.Models
         public LiveIcon[] LiveIcons { get; set; }
         public X011(Entities.Command command) : base(command)
         {
+
+            if (command.CommandString.IndexOf("X011") != 0) throw new InvalidOperationException();
+
             string[] args = command.CommandString.Substring(4).Split("|");
 
             LiveIcon[] LiveIcons = new LiveIcon[args.Length];

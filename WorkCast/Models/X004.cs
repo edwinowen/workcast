@@ -9,6 +9,8 @@ namespace WorkCast.Models
         public ulong Pak { get; set; }
         public X004(Entities.Command command) : base(command)
         {
+            if (command.CommandString.IndexOf("X004=") != 0) throw new InvalidOperationException();
+
             Pak = UInt64.Parse(command.CommandString.Substring(5));
         }
     }

@@ -9,6 +9,8 @@ namespace WorkCast.Models
         public ushort PresenterId { get; set; }
         public X006(Entities.Command command) : base(command)
         {
+            if (command.CommandString.IndexOf("X006=") != 0) throw new InvalidOperationException();
+
             PresenterId = UInt16.Parse(command.CommandString.Substring(5));
         }
     }

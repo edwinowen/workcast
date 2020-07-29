@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    min-height: 100vh;
+    padding: 0 0.5%
+}
+
+.in, .out {
+    background: lightblue;
+    width: 49%;
+    margin: 1% 0.5%;
+    border-radius: 6px;
+}
+.input {
+    border: none;
+    width: calc(70% - 32px);
+    height: 30px;
+    border-radius: 6px;
+    margin: 4px;
+    padding: 0 12px;
+}
+
+.btn {
+    color: white;
+    background: blue;
+    border: none;
+    width: calc(30% - 8px);
+    height: 30px;
+    border-radius: 6px;
+    margin: 4px;
+}
+
+.btn.wide {
+    width: calc(100% - 8px);
+}
+
+.content-panel {
+    height: calc(100% - 38px);
+}
+
+.queue {
+    padding: 10px 4px;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.queue-item {
+    background: white;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin-bottom: 2px;
+}
+
+.queue-item p {
+    margin: 0;
+}
+
+.json {
+    margin: 0 50px;
+    padding: 10px 0;
+    overflow: hidden;
+    font-style: monospace;
+    font-family: Courier;
+    font-size: 12px;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
