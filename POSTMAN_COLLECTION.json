@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "6d8c5489-1e0f-4bfc-b44d-227ce6ff8249",
+		"name": "Workcast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "X001",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X001ID=1234",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X001ID=1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X002",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X002ID=1234|V=T|Q1=123|Q2=456|Q3=789",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X002ID=1234|V=T|Q1=123|Q2=456|Q3=789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X003=http://www.workcast.co.uk/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X003=http://www.workcast.co.uk/"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X004",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X004=55656636633",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X004=55656636633"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X005",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X005=”Sorry, these is a problem with the event. Please refresh your browser”",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X005=”Sorry, these is a problem with the event. Please refresh your browser”"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X006",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X006=12345",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X006=12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X007",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X007MEDI1=http://www.workcast.net/media/1234.mp4|MEDI2=http://www.workcast.net/media/4567.mp4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X007MEDI1=http://www.workcast.net/media/1234.mp4|MEDI2=http://www.workcast.net/media/4567.mp4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X008",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X008=http://www.workcast.net/images/123.jpg",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X008=http://www.workcast.net/images/123.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X009",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X009=12345",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X009=12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X010",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X010=”Thanks Tom. I have a question on the 3rd point you made?”",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X010=”Thanks Tom. I have a question on the 3rd point you made?”"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "X011",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X011ON=677722341234|OFF=7384384734573845|ON=563647893904308478",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Enqueue"
+					],
+					"query": [
+						{
+							"key": "comm",
+							"value": "X011ON=677722341234|OFF=7384384734573845|ON=563647893904308478"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dequeue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Dequeue",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Dequeue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Seed",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Seed"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
