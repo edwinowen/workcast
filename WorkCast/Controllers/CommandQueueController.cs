@@ -55,7 +55,7 @@ namespace WorkCast.Controllers
         }
 
         [HttpPost]
-        public void Enqueue([FromQuery] string comm)
+        public ActionResult<string> Enqueue([FromQuery] string comm)
         {
             Entities.Command command = new Entities.Command
             {
@@ -65,6 +65,8 @@ namespace WorkCast.Controllers
 
             db.Add(command);
             db.SaveChanges();
+
+            return comm.Substring(0, 4) + " added to Command Queue";
         }
 
         [HttpGet]
