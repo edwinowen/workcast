@@ -1,8 +1,23 @@
 <div class="main">
   <div class="in">
-
+    <div class="content-panel">
+      <div class="enqueue-container">
+        <button class="btn wide" (click)="seed()">Seed</button>
+        <div class="queue">
+          <div class="queue-item" *ngFor="let item of queue">
+            <p>{{item.commandString}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input class="input" type="text" (keyup)="onKey($event)">
+    <button class="btn" (click)="enqueue()">Enqueue</button>
   </div>
   <div class="out">
-    
+    <div class="content-panel">
+      <h3>Last Command Processed</h3>
+      <pre class="json">{{lastCommand | json}}</pre>
+    </div>
+    <button class="btn wide" (click)="dequeue()">Dequeue</button>
   </div>
 </div>

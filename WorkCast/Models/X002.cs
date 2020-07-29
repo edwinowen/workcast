@@ -11,9 +11,11 @@ namespace WorkCast.Models
         public uint[] Q { get; set; }
         public X002(Entities.Command command) : base(command)
         {
+            if (command.CommandString.IndexOf("X002ID=") != 0) throw new InvalidOperationException();
+
             string[] args = command.CommandString.Substring(5).Split("|");
 
-            PollId = UInt16.Parse(args[0].Substring(3));
+            PollId = UInt16.Parse(args[0].Substring(2));
             V = args[1].Substring(2) == "T" ? true : false;
             Q = new uint[args.Length - 2];
 

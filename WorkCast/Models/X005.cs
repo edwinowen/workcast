@@ -1,4 +1,6 @@
-﻿namespace WorkCast.Models
+﻿using System;
+
+namespace WorkCast.Models
 {
     // /api/CommandQueue/Enqueue?comm=X005=”Sorry, these is a problem with the event. Please refresh your browser”
 
@@ -7,6 +9,8 @@
         public string Message { get; set; }
         public X005(Entities.Command command) : base(command)
         {
+            if (command.CommandString.IndexOf("X005=") != 0) throw new InvalidOperationException();
+
             string message = command.CommandString.Substring(5);
 
             if (message.Length >= 500)

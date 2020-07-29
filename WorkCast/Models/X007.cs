@@ -1,4 +1,6 @@
-﻿namespace WorkCast.Models
+﻿using System;
+
+namespace WorkCast.Models
 {
     public class X007 : Command
     {
@@ -7,8 +9,7 @@
         public Media[] Media { get; set; }
         public X007(Entities.Command command) : base(command)
         {
-            // X007MEDI1=http://www.workcast.net/media/1234.mp4
-            // X007 Change media X007MID1 =< media url >| MED2 =< media url > X007MEDI1 = http://www.workcast.net/media/1234.mp4
+            if (command.CommandString.IndexOf("X007") != 0) throw new InvalidOperationException();
 
             string[] args = command.CommandString.Substring(4).Split("|");
 
