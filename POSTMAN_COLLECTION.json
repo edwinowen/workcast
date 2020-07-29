@@ -6,6 +6,48 @@
 	},
 	"item": [
 		{
+			"name": "Seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Seed",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Seed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dequeue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44375/api/CommandQueue/Dequeue",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44375",
+					"path": [
+						"api",
+						"CommandQueue",
+						"Dequeue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "X001",
 			"request": {
 				"method": "POST",
@@ -314,12 +356,12 @@
 			"response": []
 		},
 		{
-			"name": "Dequeue",
+			"name": "X012",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44375/api/CommandQueue/Dequeue",
+					"raw": "https://localhost:44375/api/CommandQueue/Enqueue?comm=X012=http://www.workcast.net",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -328,28 +370,13 @@
 					"path": [
 						"api",
 						"CommandQueue",
-						"Dequeue"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Seed",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://localhost:44375/api/CommandQueue/Seed",
-					"protocol": "https",
-					"host": [
-						"localhost"
+						"Enqueue"
 					],
-					"port": "44375",
-					"path": [
-						"api",
-						"CommandQueue",
-						"Seed"
+					"query": [
+						{
+							"key": "comm",
+							"value": "X012=http://www.workcast.net"
+						}
 					]
 				}
 			},
