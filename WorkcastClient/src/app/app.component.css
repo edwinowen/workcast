@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    min-height: 100vh;
+    padding: 0 0.5%
+}
+
+.in, .out {
+    background: lightblue;
+    width: 49%;
+    margin: 1% 0.5%;
+    border-radius: 6px;
+}
